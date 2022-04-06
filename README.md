@@ -10,5 +10,6 @@ chap05 : template을 이용한 사용자정보 spring.
 chap06 : mybatis, vo를 이용한 사용자정보 spring.   
 chap07 : mybatis, map을 이용한 사용자정보 spring.   
 chap08 : Get방식 AI자동 증가 필드 증가   
-chap09 : File upload, download
+chap09 : File upload, download   
+chap10 : 게시판 upload, download
 
