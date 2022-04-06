@@ -1,0 +1,21 @@
+Transaction
+- 한번에 실행해야 하는 다수개의 SQL작업
+- 게시글 저장, 첨부파일정보 저장, 첨부파일 저장
+- 계좌이체 : A은행 -> B은행
+
+@Service
+class BoardService {
+	
+	@Transaction(rollbackFor={Exception.class})
+	public String saveBoard(Board board, MultipartFile[] files) {
+
+		dao.saveBoard(board);		// 게시글 저장(board 테이블)
+		for(int i=0; i<files.length; i++) {
+			
+			this.saveFileInfo(files[i]);  // 파일정보 저장(attach)
+		}
+		// throw new Exception("저장 중 오류 발생");
+		fileSave(files[i]);		// 서버측 파일 시스템에 파일			
+	}
+
+}
