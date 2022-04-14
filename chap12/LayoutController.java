@@ -16,6 +16,13 @@ public class LayoutController {
 		return "layout/lay";
 	}
 	
+	@GetMapping("/lay2")
+	public String layout2() {
+		
+//		return "Layout Test";
+		return "layout/lay2";
+	}
+	
 	
 	
 	
