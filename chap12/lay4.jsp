@@ -64,6 +64,23 @@
 			return false;
 		}
 		
+		function getTable() {
+			$.ajax({
+				url:'/layout/lay5',
+				method:'post',
+				cache:false,
+				data:{'a':'b'},
+				dataType:'text',
+				success:function(res){
+					//alert(res);
+					$('#resTable').html(res);
+				},
+				error:function(xhr,status,err){
+					alert('에러:' + err);
+				}
+			});
+		}
+		
 		
 	</script>
 </head>
@@ -90,7 +107,9 @@
 </form>
 <hr>
 <p>
-	
+	<a href="javascript:getTable();">AJAX 요청으로 html 응답받기</a>
+	<p>
+	<div id="resTable"></div>
 	
 	<div id = "res"></div>
 	

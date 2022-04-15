@@ -62,7 +62,11 @@ public class LayoutController {
 		return map;
 	}
 	
-	
+	@PostMapping("/lay5")
+	public String lay5() {
+		
+		return "/layout/lay5";
+	}
 	
 	
 }

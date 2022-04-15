@@ -24,7 +24,9 @@
 		#dumb {
 			clear : both;
 		}
+		#containner02 { margin-top : 20px; border : 1px solid black; padding : 5px; }
 		#containner02 > img { float : left; margin-right : 10px; }
+		#containner02::after { content :""; clear : both; display : table }
 	</style>
 </head>
 <body>
@@ -37,9 +39,10 @@
 	</div>
 	
 	<div id = "dumb"></div>
+	
 	<div id = containner02>
-		<img src = "/img/dog.jpg" style = "width : 300px">
-		Hi, Hello, Bye Hi, Hello, Bye Hi, Hello, Bye Hi, Hello, Bye Hi, Hello, Bye Hi, Hello, Bye Hi, Hello, Bye
+		<img src = "/img/dog.jpg" style="width : 400px;">
+		Hi, Hello, Bye Hi, Hello, Bye Hi, Hello, Bye Hi, Hello, Bye Hi, Hello, Bye Hi, Hello, Bye Hi, Hello, Bye Hi, Hello, Bye Hi, Hello, Bye Hi, Hello, Bye Hi, Hello, Bye Hi, Hello, Bye Hi, Hello, Bye Hi, Hello, ByeHi, Hello, Bye Hi, Hello, Bye Hi, Hello, Bye Hi, Hello, Bye Hi, Hello, Bye Hi, Hello, Bye Hi, Hello, Bye
 	</div>
 </body>
 </html>
