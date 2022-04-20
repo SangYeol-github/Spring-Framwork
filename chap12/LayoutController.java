@@ -74,5 +74,11 @@ public class LayoutController {
 		return "layout/lay6";
 	}
 	
+	@GetMapping("/lay7")
+	public String layout7() {
+		
+		return "layout/lay7";
+	}
+	
 	
 }
