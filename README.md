@@ -13,5 +13,5 @@ chap08 : Get방식 AI자동 증가 필드 증가
 chap09 : File upload, download   
 chap10 : 게시판 upload, download   
 chap11 : Transaction, chat   
-chap12 : CSS
+chap12 : CSS, SQL(계층구조)
 
