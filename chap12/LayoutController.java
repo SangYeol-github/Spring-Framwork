@@ -80,5 +80,16 @@ public class LayoutController {
 		return "layout/lay7";
 	}
 	
+	@GetMapping("/lay8")
+	public String layout8() {
+		
+		return "layout/lay8";
+	}
+	
+	@GetMapping("/lay9")
+	public String layout9() {
+		
+		return "layout/lay9";
+	}
 	
 }
