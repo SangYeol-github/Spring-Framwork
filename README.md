@@ -14,5 +14,5 @@ chap09 : File upload, download
 chap10 : 게시판 upload, download   
 chap11 : Transaction, chat   
 chap12 : CSS, SQL(계층구조)   
-chap13 : 장바구니   
+chap13 : 장바구니, 게시판 파일 업로드(SQL)         
 
