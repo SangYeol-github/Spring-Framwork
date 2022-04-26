@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.tjoeun.mapper.CartMapper">
+
+	<select id="getCartProd"
+		resultType="com.tjoeun.vo.Product">
+		SELECT p.num, p.pname, i.imgname FROM product p INNER JOIN prod_img i
+		ON p.num=i.pnum
+		<where> 
+			p.num IN
+			<foreach collection="list" item="prod" index="index" separator="," open="(" close=")">
+           		#{prod.num}
+           </foreach>
+      	</where> 
+      </select>
+      
+</mapper>
